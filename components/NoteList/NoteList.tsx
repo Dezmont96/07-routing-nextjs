@@ -10,6 +10,11 @@ interface NoteListProps {
   notes: Note[];
 }
 
+const buttonGroupStyles: React.CSSProperties = {
+  display: 'flex',
+  gap: '8px',
+};
+
 const NoteList: React.FC<NoteListProps> = ({ notes }) => {
   const queryClient = useQueryClient();
 
@@ -28,12 +33,14 @@ const NoteList: React.FC<NoteListProps> = ({ notes }) => {
     <ul className={css.list}>
       {notes.map(({ id, title, content, tag }) => (
         <li key={id} className={css.listItem}>
-          <h2 className={css.title}>{title}</h2>
-          <p className={css.content}>{content}</p>
+          <div>
+            <h2 className={css.title}>{title}</h2>
+            <p className={css.content}>{content}</p>
+          </div>
           <div className={css.footer}>
             <span className={css.tag}>{tag}</span>
-            <div className={css.actions}>
-              <Link href={`/notes/${id}`} className={css.button}>
+            <div style={buttonGroupStyles}>
+              <Link href={`/notes/${id}`} className={css.link}>
                 View details
               </Link>
               <button

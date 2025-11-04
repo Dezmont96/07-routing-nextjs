@@ -2,13 +2,11 @@
 "[project]/components/TanStackProvider/TanStackProvider.tsx [app-client] (ecmascript)", ((__turbopack_context__) => {
 "use strict";
 
-// components/TanStackProvider/TanStackProvider.tsx
 __turbopack_context__.s([
     "default",
     ()=>__TURBOPACK__default__export__
 ]);
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
-// Цей компонент є обгорткою, яка працює на клієнті
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/compiler-runtime.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$tanstack$2f$query$2d$core$2f$build$2f$modern$2f$queryClient$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/@tanstack/query-core/build/modern/queryClient.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$tanstack$2f$react$2d$query$2f$build$2f$modern$2f$QueryClientProvider$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/@tanstack/react-query/build/modern/QueryClientProvider.js [app-client] (ecmascript)");
@@ -24,11 +22,11 @@ var _s = __turbopack_context__.k.signature();
 const TanStackProvider = (t0)=>{
     _s();
     const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(5);
-    if ($[0] !== "455b8b60716f4d4810fc160a1f3949f2c1073d17419cf220e8332dbe83b703a2") {
+    if ($[0] !== "681618bd9ddca0118e8a4edf231405769bee84466fff48dc9b50b8d6750438ec") {
         for(let $i = 0; $i < 5; $i += 1){
             $[$i] = Symbol.for("react.memo_cache_sentinel");
         }
-        $[0] = "455b8b60716f4d4810fc160a1f3949f2c1073d17419cf220e8332dbe83b703a2";
+        $[0] = "681618bd9ddca0118e8a4edf231405769bee84466fff48dc9b50b8d6750438ec";
     }
     const { children } = t0;
     const [queryClient] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(_temp);
@@ -38,7 +36,7 @@ const TanStackProvider = (t0)=>{
             initialIsOpen: false
         }, void 0, false, {
             fileName: "[project]/components/TanStackProvider/TanStackProvider.tsx",
-            lineNumber: 26,
+            lineNumber: 24,
             columnNumber: 10
         }, ("TURBOPACK compile-time value", void 0));
         $[1] = t1;
@@ -55,7 +53,7 @@ const TanStackProvider = (t0)=>{
             ]
         }, void 0, true, {
             fileName: "[project]/components/TanStackProvider/TanStackProvider.tsx",
-            lineNumber: 33,
+            lineNumber: 31,
             columnNumber: 10
         }, ("TURBOPACK compile-time value", void 0));
         $[2] = children;

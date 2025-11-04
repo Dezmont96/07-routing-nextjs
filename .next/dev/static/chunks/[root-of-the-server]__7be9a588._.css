@@ -86,14 +86,14 @@
   display: flex;
 }
 
-.Header-module__arFiJq__header a {
+.Header-module__arFiJq__headerLink {
   color: #fff;
   font-size: 1.5rem;
   font-weight: bold;
   text-decoration: none;
 }
 
-.Header-module__arFiJq__header a:hover {
+.Header-module__arFiJq__headerLink:hover {
   color: #ddd;
 }
 
@@ -105,13 +105,18 @@
   display: flex;
 }
 
-.Header-module__arFiJq__navigation li a {
+.Header-module__arFiJq__navigationItem {
+  align-items: center;
+  display: flex;
+}
+
+.Header-module__arFiJq__navigationLink {
   color: #fff;
   font-size: 1rem;
   text-decoration: none;
 }
 
-.Header-module__arFiJq__navigation li a:hover {
+.Header-module__arFiJq__navigationLink:hover {
   color: #ddd;
 }
 

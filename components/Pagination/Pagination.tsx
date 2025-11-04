@@ -24,12 +24,10 @@ const Pagination: React.FC<PaginationProps> = ({
       previousLabel="<"
       forcePage={currentPage - 1}
       renderOnZeroPageCount={null}
+      
       containerClassName={css.pagination}
-      pageLinkClassName={css.pageLink}
-      previousLinkClassName={css.pageLink}
-      nextLinkClassName={css.pageLink}
-      activeLinkClassName={css.activeLink}
-      disabledLinkClassName={css.disabledLink}
+      
+      activeClassName={css.active}
     />
   );
 };

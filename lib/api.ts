@@ -9,6 +9,7 @@ export interface FetchNotesParams {
   page?: number;
   search?: string;
   perPage?: number;
+  tag?: string;
 }
 
 export interface FetchNotesResponse {
@@ -31,13 +32,16 @@ apiClient.interceptors.request.use(config => {
 export const fetchNotes = async (
   params: FetchNotesParams = {}
 ): Promise<FetchNotesResponse> => {
+  const { page = 1, search = '', perPage = 12, tag } = params;
+
   const response: AxiosResponse<FetchNotesResponse> = await apiClient.get(
     '/notes',
     {
       params: {
-        page: params.page || 1,
-        search: params.search || '',
-        perPage: params.perPage || 12,
+        page,
+        search,
+        perPage,
+        ...(tag && { tag }),
       },
     }
   );

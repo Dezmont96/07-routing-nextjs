@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 3, "column": 0}, "map": {"version":3,"sources":["turbopack:///[project]/app/page.module.css [app-rsc] (css module)"],"sourcesContent":["__turbopack_context__.v({\n  \"container\": \"page-module__E0kJGG__container\",\n  \"description\": \"page-module__E0kJGG__description\",\n  \"main\": \"page-module__E0kJGG__main\",\n  \"title\": \"page-module__E0kJGG__title\",\n});\n"],"names":[],"mappings":"AAAA;AACA;AACA;AACA;AACA;AACA"}},
+    {"offset": {"line": 13, "column": 0}, "map": {"version":3,"sources":["file:///E:/project%20groop/07-routing-nextjs/app/not-found.tsx"],"sourcesContent":["import Link from 'next/link';\r\nimport css from './page.module.css';\r\n\r\nexport default function NotFound() {\r\n  return (\r\n    <main className={css.container}>\r\n      <h1 className={css.title}>404 - Page Not Found</h1>\r\n      <p className={css.description}>\r\n        Sorry, the page you are looking for does not exist.\r\n      </p>\r\n      <Link href=\"/\" style={{ color: '#007bff', textDecoration: 'underline' }}>\r\n        Go back to Home\r\n      </Link>\r\n    </main>\r\n  );\r\n}"],"names":[],"mappings":";;;;;AAAA;AACA;;;;AAEe,SAAS;IACtB,qBACE,8OAAC;QAAK,WAAW,kIAAG,CAAC,SAAS;;0BAC5B,8OAAC;gBAAG,WAAW,kIAAG,CAAC,KAAK;0BAAE;;;;;;0BAC1B,8OAAC;gBAAE,WAAW,kIAAG,CAAC,WAAW;0BAAE;;;;;;0BAG/B,8OAAC,0LAAI;gBAAC,MAAK;gBAAI,OAAO;oBAAE,OAAO;oBAAW,gBAAgB;gBAAY;0BAAG;;;;;;;;;;;;AAK/E","debugId":null}}]
+}
