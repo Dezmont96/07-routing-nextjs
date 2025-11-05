@@ -57,6 +57,7 @@ if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelper
 "[project]/app/notes/filter/[...slug]/error.tsx [app-client] (ecmascript)", ((__turbopack_context__) => {
 "use strict";
 
+// app/notes/filter/[...slug]/error.tsx
 __turbopack_context__.s([
     "default",
     ()=>FilteredNotesError
@@ -70,18 +71,18 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ErrorMessage$2
 ;
 function FilteredNotesError(t0) {
     const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(4);
-    if ($[0] !== "cedf1b09370d2ad135eda0143b756ed52754a21f22539e88af48fe735a4f5c63") {
+    if ($[0] !== "57b841283dc596d15f3256556deaff79ece0e5b491baf27ffe61fe113e83e3a2") {
         for(let $i = 0; $i < 4; $i += 1){
             $[$i] = Symbol.for("react.memo_cache_sentinel");
         }
-        $[0] = "cedf1b09370d2ad135eda0143b756ed52754a21f22539e88af48fe735a4f5c63";
+        $[0] = "57b841283dc596d15f3256556deaff79ece0e5b491baf27ffe61fe113e83e3a2";
     }
     const { error } = t0;
     let t1;
     if ($[1] === Symbol.for("react.memo_cache_sentinel")) {
         t1 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
             fileName: "[project]/app/notes/filter/[...slug]/error.tsx",
-            lineNumber: 22,
+            lineNumber: 19,
             columnNumber: 10
         }, this);
         $[1] = t1;
@@ -92,19 +93,19 @@ function FilteredNotesError(t0) {
     if ($[2] !== error.message) {
         t2 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ErrorMessage$2f$ErrorMessage$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
             children: [
-                "Could not fetch the list of notes for this category. ",
+                "Could not load data for this category. ",
                 t1,
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("em", {
                     children: error.message
                 }, void 0, false, {
                     fileName: "[project]/app/notes/filter/[...slug]/error.tsx",
-                    lineNumber: 29,
-                    columnNumber: 81
+                    lineNumber: 26,
+                    columnNumber: 67
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/app/notes/filter/[...slug]/error.tsx",
-            lineNumber: 29,
+            lineNumber: 26,
             columnNumber: 10
         }, this);
         $[2] = error.message;

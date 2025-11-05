@@ -1,0 +1,26 @@
+/* [project]/app/notes/filter/@sidebar/sidebar.module.css [app-client] (css) */
+.sidebar-module__R1Mmra__menuList {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.sidebar-module__R1Mmra__menuItem {
+  margin-bottom: 16px;
+}
+
+.sidebar-module__R1Mmra__menuLink {
+  color: #fff;
+  padding: 8px 16px;
+  font-size: 16px;
+  text-decoration: none;
+  transition: background-color .3s;
+  display: block;
+}
+
+.sidebar-module__R1Mmra__menuLink:hover {
+  color: #ddd;
+  background-color: #444;
+}
+
+/*# sourceMappingURL=app_notes_filter_%40sidebar_sidebar_module_bb967b81.css.map*/

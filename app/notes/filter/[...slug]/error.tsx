@@ -1,16 +1,11 @@
+// app/notes/filter/[...slug]/error.tsx
 'use client';
-
 import ErrorMessage from '@/components/ErrorMessage/ErrorMessage';
 
-interface FilteredNotesErrorProps {
-  error: Error;
-  reset: () => void;
-}
-
-export default function FilteredNotesError({ error }: FilteredNotesErrorProps) {
+export default function FilteredNotesError({ error }: { error: Error }) {
   return (
     <ErrorMessage>
-      Could not fetch the list of notes for this category. <br />
+      Could not load data for this category. <br />
       <em>{error.message}</em>
     </ErrorMessage>
   );
