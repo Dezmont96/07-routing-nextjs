@@ -35,6 +35,10 @@
 }
 
 /* [project]/app/notes/[id]/NoteDetails.module.css [app-client] (css) */
+.NoteDetails-module__lN3cYq__main {
+  flex: 1;
+}
+
 .NoteDetails-module__lN3cYq__container {
   background-color: #fff;
   border-radius: 8px;
@@ -89,6 +93,19 @@
   font-size: 12px;
   display: inline-block;
   overflow: hidden;
+}
+
+.NoteDetails-module__lN3cYq__backBtn {
+  color: #000;
+  cursor: pointer;
+  background-color: #0000;
+  border: none;
+  border-radius: 4px;
+  align-self: flex-start;
+  padding: 6px 12px;
+  font-size: 14px;
+  text-decoration: underline;
+  display: inline-block;
 }
 
 /*# sourceMappingURL=_6782b8ab._.css.map*/
