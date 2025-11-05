@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import css from './SidebarNotes.module.css';
+import css from './sidebar.module.css';
 
 const tags = ['Work', 'Personal', 'Todo', 'Meeting', 'Shopping'];
 
