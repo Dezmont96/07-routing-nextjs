@@ -71,9 +71,9 @@ __turbopack_context__.s([
 ]);
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/compiler-runtime.js [app-client] (ecmascript)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/navigation.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2d$dom$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react-dom/index.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/navigation.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Modal$2f$Modal$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__ = __turbopack_context__.i("[project]/components/Modal/Modal.module.css [app-client] (css module)");
 ;
 var _s = __turbopack_context__.k.signature();
@@ -85,23 +85,33 @@ var _s = __turbopack_context__.k.signature();
 ;
 const Modal = (t0)=>{
     _s();
-    const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(15);
-    if ($[0] !== "c353f50c9c024f8313af76faca88a3e5e1ecb02b15e9b12d3cbe024b22b62d7b") {
-        for(let $i = 0; $i < 15; $i += 1){
+    const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(18);
+    if ($[0] !== "7293918cc9853696b7bcb091b3509ebc54cffd07677edf0c16c2c534b739dbd0") {
+        for(let $i = 0; $i < 18; $i += 1){
             $[$i] = Symbol.for("react.memo_cache_sentinel");
         }
-        $[0] = "c353f50c9c024f8313af76faca88a3e5e1ecb02b15e9b12d3cbe024b22b62d7b";
+        $[0] = "7293918cc9853696b7bcb091b3509ebc54cffd07677edf0c16c2c534b739dbd0";
     }
-    const { children } = t0;
+    const { children, onClose } = t0;
     const router = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRouter"])();
     let t1;
+    if ($[1] !== onClose || $[2] !== router) {
+        t1 = onClose || (()=>router.back());
+        $[1] = onClose;
+        $[2] = router;
+        $[3] = t1;
+    } else {
+        t1 = $[3];
+    }
+    const handleClose = t1;
     let t2;
-    if ($[1] !== router) {
-        t1 = ()=>{
+    let t3;
+    if ($[4] !== handleClose) {
+        t2 = ()=>{
             document.body.style.overflow = "hidden";
             const handleKeyDown = (e)=>{
                 if (e.code === "Escape") {
-                    router.back();
+                    handleClose();
                 }
             };
             window.addEventListener("keydown", handleKeyDown);
@@ -110,88 +120,91 @@ const Modal = (t0)=>{
                 window.removeEventListener("keydown", handleKeyDown);
             };
         };
-        t2 = [
-            router
+        t3 = [
+            handleClose
         ];
-        $[1] = router;
-        $[2] = t1;
-        $[3] = t2;
+        $[4] = handleClose;
+        $[5] = t2;
+        $[6] = t3;
     } else {
-        t1 = $[2];
-        t2 = $[3];
+        t2 = $[5];
+        t3 = $[6];
     }
-    (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])(t1, t2);
-    let t3;
-    if ($[4] !== router) {
-        t3 = (e_0)=>{
+    (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])(t2, t3);
+    let t4;
+    if ($[7] !== handleClose) {
+        t4 = (e_0)=>{
             if (e_0.currentTarget === e_0.target) {
-                router.back();
+                handleClose();
             }
         };
-        $[4] = router;
-        $[5] = t3;
+        $[7] = handleClose;
+        $[8] = t4;
     } else {
-        t3 = $[5];
+        t4 = $[8];
     }
-    const handleBackdropClick = t3;
-    let t4;
+    const handleBackdropClick = t4;
+    if (typeof document === "undefined") {
+        return null;
+    }
     let t5;
-    if ($[6] !== children || $[7] !== handleBackdropClick) {
-        t5 = Symbol.for("react.early_return_sentinel");
+    let t6;
+    if ($[9] !== children || $[10] !== handleBackdropClick) {
+        t6 = Symbol.for("react.early_return_sentinel");
         bb0: {
-            const portalNode = typeof document !== "undefined" ? document.getElementById("root-modal") : null;
+            const portalNode = document.getElementById("root-modal");
             if (!portalNode) {
-                t5 = null;
+                t6 = null;
                 break bb0;
             }
-            let t6;
-            if ($[10] !== children) {
-                t6 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+            let t7;
+            if ($[13] !== children) {
+                t7 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                     className: __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Modal$2f$Modal$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].modal,
                     children: children
                 }, void 0, false, {
                     fileName: "[project]/components/Modal/Modal.tsx",
-                    lineNumber: 73,
+                    lineNumber: 88,
                     columnNumber: 14
                 }, ("TURBOPACK compile-time value", void 0));
-                $[10] = children;
-                $[11] = t6;
-            } else {
-                t6 = $[11];
-            }
-            let t7;
-            if ($[12] !== handleBackdropClick || $[13] !== t6) {
-                t7 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Modal$2f$Modal$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].backdrop,
-                    role: "dialog",
-                    "aria-modal": "true",
-                    onClick: handleBackdropClick,
-                    children: t6
-                }, void 0, false, {
-                    fileName: "[project]/components/Modal/Modal.tsx",
-                    lineNumber: 81,
-                    columnNumber: 14
-                }, ("TURBOPACK compile-time value", void 0));
-                $[12] = handleBackdropClick;
-                $[13] = t6;
+                $[13] = children;
                 $[14] = t7;
             } else {
                 t7 = $[14];
             }
-            t4 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2d$dom$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["createPortal"])(t7, portalNode);
+            let t8;
+            if ($[15] !== handleBackdropClick || $[16] !== t7) {
+                t8 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                    className: __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Modal$2f$Modal$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].backdrop,
+                    role: "dialog",
+                    "aria-modal": "true",
+                    onClick: handleBackdropClick,
+                    children: t7
+                }, void 0, false, {
+                    fileName: "[project]/components/Modal/Modal.tsx",
+                    lineNumber: 96,
+                    columnNumber: 14
+                }, ("TURBOPACK compile-time value", void 0));
+                $[15] = handleBackdropClick;
+                $[16] = t7;
+                $[17] = t8;
+            } else {
+                t8 = $[17];
+            }
+            t5 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2d$dom$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["createPortal"])(t8, portalNode);
         }
-        $[6] = children;
-        $[7] = handleBackdropClick;
-        $[8] = t4;
-        $[9] = t5;
+        $[9] = children;
+        $[10] = handleBackdropClick;
+        $[11] = t5;
+        $[12] = t6;
     } else {
-        t4 = $[8];
-        t5 = $[9];
+        t5 = $[11];
+        t6 = $[12];
     }
-    if (t5 !== Symbol.for("react.early_return_sentinel")) {
-        return t5;
+    if (t6 !== Symbol.for("react.early_return_sentinel")) {
+        return t6;
     }
-    return t4;
+    return t5;
 };
 _s(Modal, "vQduR7x+OPXj6PSmJyFnf+hU7bg=", false, function() {
     return [

@@ -1,41 +1,65 @@
 'use client';
 
 import { useQuery } from '@tanstack/react-query';
-import { useParams } from 'next/navigation';
+import { useRouter } from 'next/navigation';
 import { fetchNoteById } from '@/lib/api';
 import NotePreview from '@/components/NotePreview/NotePreview';
+import Modal from '@/components/Modal/Modal';
 import Loader from '@/components/Loader/Loader';
 import ErrorMessage from '@/components/ErrorMessage/ErrorMessage';
 
-export default function ModalNotePreview() {
-  const params = useParams(); 
+interface ModalNotePreviewClientProps {
+  noteId: string;
+}
 
-  const id = Array.isArray(params.id) ? params.id[0] : params.id as string | undefined;
+export default function ModalNotePreviewClient({ noteId }: ModalNotePreviewClientProps) {
+  const router = useRouter();
 
   const {
     data: note,
-    status,
+    isLoading,
+    isError,
+    error,
   } = useQuery({
-    queryKey: ['notes', id],
-
-    queryFn: () => fetchNoteById(id!),
-    enabled: !!id, 
-    refetchOnMount: false, 
+    queryKey: ['note', noteId],
+    queryFn: () => fetchNoteById(noteId),
+    enabled: !!noteId,
+    refetchOnMount: false,
   });
 
-  if (status === 'pending') {
-    return <Loader />;
+  const handleClose = () => {
+    router.back();
+  };
+
+  let content: React.ReactNode;
+
+  if (isLoading && !note) {
+    content = <Loader />;
+  } else if (isError) {
+    content = <ErrorMessage>{error.message}</ErrorMessage>;
+  } else if (note) {
+    content = <NotePreview note={note} />;
+  } else {
+    content = <ErrorMessage>Note not found.</ErrorMessage>;
   }
 
-  if (status === 'error' || !note) {
+  const buttonStyles: React.CSSProperties = {
+    padding: '8px 16px',
+    marginTop: '20px',
+    cursor: 'pointer',
+    border: '1px solid #ccc',
+    borderRadius: '4px',
+    backgroundColor: '#f0f0f0',
+    display: 'block',
+    marginLeft: 'auto'
+  };
 
-    return <ErrorMessage>Could not fetch note details.</ErrorMessage>;
-  }
-
-  if (status === 'success' && note) {
-
-    return <NotePreview note={note} />;
-  }
-  
-  return null;
+  return (
+    <Modal onClose={handleClose}>
+      {content}
+      <button style={buttonStyles} onClick={handleClose}>
+        Close
+      </button>
+    </Modal>
+  );
 }
